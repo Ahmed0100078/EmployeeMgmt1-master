@@ -70,6 +70,7 @@ namespace EmployeeMgmt1
 
         private void GetDepartment()
         {
+            //select all data from db
             string Query = "Select * from DepartmentTb1";
             DepCb.DisplayMember = Con.GetData(Query).Columns["Depname"].ToString();
             DepCb.ValueMember = Con.GetData(Query).Columns["Depid"].ToString();
